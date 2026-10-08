@@ -7,8 +7,8 @@ const english = {
   'nav.news': 'Updates',
   'nav.access': 'Find us',
   'contact.phone': 'Call the restaurant <span aria-hidden="true">↗</span>',
-  'hero.title': 'A little joy<br>in your<br>everyday lunch<span class="red-stop">.</span>',
-  'hero.subtitle': 'Handmade soba and a weekly chef’s choice.<br>Welcome to Temari in Matsumoto, Nagano.',
+  'hero.title': 'Handmade soba<span class="red-stop">.</span><br>This week’s<br>chef’s choice<span class="red-stop">.</span>',
+  'hero.subtitle': 'Savor the aroma of soba,<br>or discover this week’s menu.<br>Enjoy lunch at Temari in Matsumoto.',
   'hero.menu': 'Explore the menu <span class="round-arrow" aria-hidden="true">↗</span>',
   'hours.label': 'Lunch hours',
   'hours.quick': 'Opens at 11:30<small>Last orders at 14:00</small>',
@@ -18,13 +18,14 @@ const english = {
   'closed.detail': 'Every Monday &amp; Tuesday<span>Including public holidays</span>',
   'access.label': 'Getting here',
   'access.quick': '1-minute walk from<br>Shinano-Arai Station<small>Parking available <span aria-hidden="true">↗</span></small>',
-  'about.title': 'Savor the soba.<br>Enjoy the season.<br>Make lunch a moment.',
-  'about.body': 'Just a one-minute walk from Shinano-Arai Station in Matsumoto, Temari serves handmade soba and a chef’s choice menu that changes every Wednesday.',
-  'about.welcome': 'Drop by and find something to look forward to at lunchtime.',
+  'about.title': 'Lunch in<br>Shimadachi, Matsumoto.',
+  'about.body': 'A one-minute walk from Shinano-Arai Station, Temari is a restaurant in Shimadachi, Matsumoto, serving handmade soba and a weekly chef’s choice.',
+  'about.welcome': 'We open for lunch at 11:30, with last orders at 14:00. Find this week’s menu and closing-day announcements on Instagram before your visit.',
   'menu.title': 'Our menu<span class="red-stop">.</span>',
   'menu.soba': 'Handmade soba',
+  'menu.sobaDescription': 'Savor the aroma and texture of handmade buckwheat noodles, one bite at a time.',
   'menu.seasonal': 'Weekly chef’s choice',
-  'menu.changes': 'A new menu every Wednesday.',
+  'menu.changes': 'Our chef’s choice changes every Wednesday. Discover what’s on the menu this week.',
   'menu.instagram': 'See this week’s menu on Instagram <span aria-hidden="true">↗</span>',
   'news.title': 'Temari updates<span class="red-stop">.</span>',
   'news.seasonal': 'This week’s menu on Instagram',
@@ -87,11 +88,11 @@ const details = {
   ja: {
     soba: {
       title: '手打ち蕎麦',
-      body: '<p>手打ち蕎麦をご用意しています。詳しいおしながき・価格は店舗へお問い合わせください。</p>'
+      body: '<p>蕎麦の香りと食感を、ひと口ずつ。手毬の手打ち蕎麦をじっくり味わう、お昼のひとときをどうぞ。</p><p class="dialog-note">詳しいおしながき・価格は店舗へお問い合わせください。</p>'
     },
     seasonal: {
       title: '週替わりのおまかせ',
-      body: '<p>おまかせ料理は、毎週水曜日に変わります。<br>今週の内容は、手毬のInstagramからご確認ください。</p>'
+      body: '<p>毎週水曜日に献立が変わる、おまかせ料理。今週のおまかせを楽しみに、お昼の予定に加えてみませんか。</p><p class="dialog-note">今週の献立は、手毬のInstagramでご紹介しています。お越しの前にご確認ください。</p>'
     },
     hours: {
       title: '営業時間のご案内',
@@ -101,11 +102,11 @@ const details = {
   en: {
     soba: {
       title: 'Handmade soba',
-      body: '<p>We serve handmade soba noodles. Please contact the restaurant for the full menu and prices.</p>'
+      body: '<p>Savor the aroma and texture of Temari’s handmade buckwheat noodles, one bite at a time. Take a moment to enjoy them over lunch.</p><p class="dialog-note">Please contact the restaurant for the full menu and prices.</p>'
     },
     seasonal: {
       title: 'Weekly chef’s choice',
-      body: '<p>Our chef’s choice menu changes every Wednesday. Check Temari’s Instagram for this week’s menu.</p>'
+      body: '<p>Our chef’s choice changes every Wednesday. Make this week’s menu something to look forward to at lunchtime.</p><p class="dialog-note">Find this week’s menu on Temari’s Instagram before your visit.</p>'
     },
     hours: {
       title: 'Opening hours',
@@ -141,7 +142,7 @@ function applyLanguage(language, remember = false) {
     }
   });
   document.title = currentLanguage === 'en' ? 'Temari | Handmade soba & weekly chef’s choice [Design mockup]' : originalTitle;
-  description.content = currentLanguage === 'en' ? 'Temari restaurant in Matsumoto, Nagano. Handmade soba and a weekly chef’s choice menu, a one-minute walk from Shinano-Arai Station. Design mockup.' : originalDescription;
+  description.content = currentLanguage === 'en' ? 'Temari in Shimadachi, Matsumoto. Savor handmade soba or discover a chef’s choice that changes every Wednesday. Lunch from 11:30; last orders at 14:00. Design mockup.' : originalDescription;
   languageButton.textContent = currentLanguage === 'en' ? '日本語' : 'English';
   languageButton.lang = currentLanguage === 'en' ? 'ja' : 'en';
   languageButton.setAttribute('aria-label', currentLanguage === 'en' ? '日本語に切り替える' : 'Switch to English');

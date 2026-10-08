@@ -69,11 +69,13 @@ h1 { font-size: clamp(44px, 4.6vw, 66px); line-height: 1.53; letter-spacing: .02
 .section-top h2, .news-title h2 { font-size: 40px; line-height: 1.6; letter-spacing: .035em; }
 .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
 .menu-image-button { display: block; width: 100%; overflow: hidden; background: #c4b49a; }
-.menu-image-button img { width: 100%; aspect-ratio: 1.48; object-fit: cover; transition: transform .6s; }
+.menu-image-button img { width: 100%; height: auto; aspect-ratio: 1.48; object-fit: cover; transition: transform .6s; }
 .menu-image-button:hover img { transform: scale(1.045); }
-.menu-card-body { padding-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.menu-card-body { padding-top: 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.menu-card-body > div { min-width: 0; }
+.menu-card-body > .round-arrow { margin-top: 2px; }
 .menu-card h3 { font-size: 30px; line-height: 1.5; letter-spacing: .035em; }
-.menu-card p { font-size: 17px; margin-top: 9px; }
+.menu-card p { font-size: 18px; line-height: 1.9; margin-top: 12px; }
 .menu-footnote { margin-top: 38px; padding-top: 24px; border-top: 1px solid #c9cbbb; }
 .menu-footnote a { font-size: 17px; display: inline-flex; align-items: center; gap: 20px; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
 .menu-footnote a span { font-size: 22px; flex-shrink: 0; }
@@ -235,7 +237,7 @@ h1 { font-size: clamp(44px, 4.6vw, 66px); line-height: 1.53; letter-spacing: .02
   .menu-grid { grid-template-columns: 1fr; gap: 34px; }
   .menu-card-body { padding-top: 19px; gap: 12px; }
   .menu-card h3 { font-size: 26px; }
-  .menu-card p { font-size: 16px; margin-top: 7px; }
+  .menu-card p { font-size: 17px; margin-top: 10px; }
   .menu-footnote { margin-top: 28px; padding-top: 22px; }
   .menu-footnote a { font-size: 16px; gap: 12px; }
   .news-title .text-button { margin-top: 17px; }
