@@ -1,6 +1,12 @@
 .photo-variant .site-header {
   position: absolute;
   inset: 0 0 auto;
+  max-width: none;
+  padding-inline: max(56px, calc((100% - 1280px) / 2));
+  background: rgba(23, 32, 23, .68);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #fffaf026;
   color: #fffaf0;
 }
 .photo-variant .site-header .brand > img { background: var(--paper); border-radius: 50%; padding: 4px; }
@@ -84,6 +90,7 @@ html[lang="en"] .photo-variant h1 { font-size: clamp(44px, 5vw, 72px); line-heig
 .menu-history-note { font-size: 18px; color: var(--muted); }
 .menu-history .text-button { font-size: 18px; }
 @media (max-width: 1150px) {
+  .photo-variant .site-header { padding-inline: 36px; }
   .photo-variant .hero-copy { width: calc(100% - 72px); }
   .photo-variant .hero { padding-top: 160px; }
   .photo-variant .menu-card-body { padding: 28px; }
@@ -101,6 +108,7 @@ html[lang="en"] .photo-variant h1 { font-size: clamp(44px, 5vw, 72px); line-heig
   .menu-history-intro { font-size: 18px; }
 }
 @media (max-width: 600px) {
+  .photo-variant .site-header { padding-inline: 20px; }
   .photo-variant .hero { min-height: 820px; min-height: max(820px, 100svh); align-items: flex-end; padding-block: 140px 88px; }
   .photo-variant .hero-copy { width: calc(100% - 40px); }
   .photo-variant h1, html[lang="en"] .photo-variant h1 { font-size: clamp(36px, 10vw, 48px); }
@@ -119,6 +127,7 @@ html[lang="en"] .photo-variant h1 { font-size: clamp(44px, 5vw, 72px); line-heig
   .menu-history-note, .menu-history .text-button { font-size: 17px; }
 }
 @media (max-width: 380px) {
+  .photo-variant .site-header { padding-inline: 16px; }
   .photo-variant .hero-copy { width: calc(100% - 32px); }
   .photo-variant .hero-subtitle { font-size: 17px; }
   .photo-variant .menu-card h3 { font-size: 24px; }
