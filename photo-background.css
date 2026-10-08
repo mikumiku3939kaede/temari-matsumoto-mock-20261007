@@ -1,0 +1,126 @@
+.photo-variant .site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  color: #fffaf0;
+}
+.photo-variant .site-header .brand > img { background: var(--paper); border-radius: 50%; padding: 4px; }
+.photo-variant .site-header .header-phone,
+.photo-variant .site-header .language-toggle { border-color: #fffaf077; }
+.photo-variant .site-header .header-phone:hover,
+.photo-variant .site-header .language-toggle:hover { background: #fffaf01a; }
+.photo-variant .desktop-nav a::after,
+.photo-variant .nav-toggle span { background: #fffaf0; }
+.photo-variant .mobile-nav { color: var(--ink); }
+.photo-variant .site-header a:focus-visible,
+.photo-variant .site-header button:focus-visible { outline-color: #fffaf0; }
+.photo-variant .mobile-nav a:focus-visible { outline-color: var(--red); }
+.photo-variant .hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  min-height: 100svh;
+  padding: 180px 0 100px;
+  color: #fffaf0;
+  background: #27231c;
+}
+.photo-variant .hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  height: 100%;
+  border-radius: 0;
+  animation: none;
+}
+.photo-variant .hero-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #151811dc 0%, #151811b5 31%, #15181133 66%, #15181108 100%), linear-gradient(180deg, #13150e85 0%, transparent 28%, transparent 73%, #13150e70 100%);
+  pointer-events: none;
+}
+.photo-variant .hero-image { object-position: 62% center; }
+.photo-variant .hero-visual:hover .hero-image { transform: none; }
+.photo-variant .hero-copy {
+  width: calc(100% - 112px);
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 0;
+}
+.photo-variant h1 { max-width: 700px; font-size: clamp(48px, 5.3vw, 76px); line-height: 1.5; }
+html[lang="en"] .photo-variant h1 { font-size: clamp(44px, 5vw, 72px); line-height: 1.35; }
+.photo-variant .hero-subtitle { font-size: 20px; line-height: 1.95; }
+.photo-variant .hero .red-stop { color: #eeaa89; }
+.photo-variant .hero .text-button { font-size: 19px; }
+.photo-variant .hero .round-arrow { border-color: #fffaf0; }
+.photo-variant .hero .text-button:hover .round-arrow { background: #fffaf0; color: var(--ink); }
+.photo-variant .hero a:focus-visible { outline-color: #fffaf0; }
+.photo-variant .quick-info { margin-top: 0; }
+.photo-variant .menu-section { background: #242b22; color: #fffaf0; }
+.photo-variant .menu-section .red-stop { color: #eeaa89; }
+.photo-variant .menu-grid { gap: 28px; }
+.photo-variant .menu-card { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: 640px; overflow: hidden; }
+.photo-variant .menu-card:focus-within { outline: 2px solid #fffaf0; outline-offset: -6px; }
+.photo-variant .menu-image-button { position: absolute; inset: 0; z-index: -1; height: 100%; }
+.photo-variant .menu-image-button img { width: 100%; height: 100%; aspect-ratio: auto; object-position: center; }
+.photo-variant .menu-image-button::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 20%, #161c1280 48%, #161c12f5 77%); pointer-events: none; }
+.photo-variant .menu-card-body { width: 100%; padding: 36px; pointer-events: none; }
+.photo-variant .menu-card-body > .round-arrow { pointer-events: auto; }
+.photo-variant .menu-card h3 { font-size: 32px; }
+.photo-variant .menu-card p { font-size: 18px; line-height: 1.9; }
+.photo-variant .menu-section .round-arrow { border-color: #fffaf0; }
+.photo-variant .menu-section .round-arrow:hover { background: #fffaf0; color: var(--ink); }
+.photo-variant .menu-section button:focus-visible,
+.photo-variant .menu-section a:focus-visible { outline-color: #fffaf0; outline-offset: -6px; }
+.photo-variant .menu-footnote { border-color: #fffaf055; }
+.photo-variant .menu-footnote a { border-color: #fffaf0; }
+.menu-history { border-bottom: 1px solid var(--line); }
+.menu-history h2 { font-size: 40px; line-height: 1.6; letter-spacing: .035em; }
+.menu-history-intro { max-width: 780px; margin-top: 28px; font-size: 20px; }
+.past-dishes { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-block: 42px; }
+.past-dishes h3 { border-top: 1px solid var(--line); padding-top: 24px; font-size: 28px; line-height: 1.7; }
+.menu-history-note { font-size: 18px; color: var(--muted); }
+.menu-history .text-button { font-size: 18px; }
+@media (max-width: 1150px) {
+  .photo-variant .hero-copy { width: calc(100% - 72px); }
+  .photo-variant .hero { padding-top: 160px; }
+  .photo-variant .menu-card-body { padding: 28px; }
+  .photo-variant .menu-card h3 { font-size: 28px; }
+}
+@media (max-width: 900px) {
+  .photo-variant .hero { min-height: 880px; padding-block: 160px 80px; }
+  .photo-variant .hero-image { object-position: 67% center; }
+  .photo-variant .hero-visual::after { background: linear-gradient(90deg, #151811d6, #15181170 65%, #15181130), linear-gradient(180deg, #13150e66, transparent 40%, #13150e33); }
+  .photo-variant .hero-subtitle { font-size: 19px; }
+  .photo-variant .menu-card { min-height: 560px; }
+  .photo-variant .menu-grid { grid-template-columns: 1fr; }
+  .photo-variant .menu-card h3 { font-size: 30px; }
+  .menu-history h2 { font-size: 34px; }
+  .menu-history-intro { font-size: 18px; }
+}
+@media (max-width: 600px) {
+  .photo-variant .hero { min-height: 820px; min-height: max(820px, 100svh); align-items: flex-end; padding-block: 140px 88px; }
+  .photo-variant .hero-copy { width: calc(100% - 40px); }
+  .photo-variant h1, html[lang="en"] .photo-variant h1 { font-size: clamp(36px, 10vw, 48px); }
+  .photo-variant .hero-image { object-position: 72% center; }
+  .photo-variant .hero-visual::after { background: linear-gradient(180deg, #10160a80, #10160a15 23%, #10160a9c 43%, #10160aed 100%); }
+  .photo-variant .hero-subtitle { font-size: 18px; margin-top: 24px; }
+  .photo-variant .hero .text-button { font-size: 17px; margin-top: 26px; }
+  .photo-variant .menu-card { min-height: 580px; }
+  .photo-variant .menu-card-body { padding: 26px 22px; gap: 12px; }
+  .photo-variant .menu-card h3 { font-size: 26px; }
+  .photo-variant .menu-card p { font-size: 17px; }
+  .photo-variant .menu-image-button::after { background: linear-gradient(180deg, transparent 12%, #161c1240 30%, #161c12f5 70%); }
+  .menu-history h2 { font-size: 30px; }
+  .past-dishes { grid-template-columns: 1fr; gap: 24px; margin-block: 30px; }
+  .past-dishes h3 { font-size: 26px; padding-top: 20px; }
+  .menu-history-note, .menu-history .text-button { font-size: 17px; }
+}
+@media (max-width: 380px) {
+  .photo-variant .hero-copy { width: calc(100% - 32px); }
+  .photo-variant .hero-subtitle { font-size: 17px; }
+  .photo-variant .menu-card h3 { font-size: 24px; }
+  .photo-variant .menu-card-body { padding-inline: 18px; }
+}
