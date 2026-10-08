@@ -8,6 +8,7 @@ const english = {
   'nav.access': 'Find us',
   'contact.phone': 'Call the restaurant <span aria-hidden="true">↗</span>',
   'hero.title': 'Handmade soba<span class="red-stop">.</span><br>This week’s<br>chef’s choice<span class="red-stop">.</span>',
+  'photo.heroTitle': 'Soba and<br>chef’s choice<span class="red-stop">.</span><br>Lunch at Temari<span class="red-stop">.</span>',
   'hero.subtitle': 'Savor the aroma of soba,<br>or discover this week’s menu.<br>Enjoy lunch at Temari in Matsumoto.',
   'hero.menu': 'Explore the menu <span class="round-arrow" aria-hidden="true">↗</span>',
   'hours.label': 'Lunch hours',
