@@ -48,7 +48,18 @@ const english = {
   'map.title': 'Temari restaurant: 25-3 Shimadachi, Matsumoto, Nagano, Japan',
   'map.open': 'Open in Google Maps <span aria-hidden="true">↗</span>',
   'instagram.title': 'Find our latest updates on Instagram',
-  'footer.note': 'This is a design mockup. Food photos are AI-generated illustrations.<br>Please contact the restaurant for the latest menu and opening information.',
+  'footer.note': 'This is a design mockup. Real photographs show past dishes.<br>Only the soba photo is an AI-generated placeholder. Please check with the restaurant for current information.',
+  'footer.photos': 'Photos: ',
+  'footer.bank': 'Matsumoto Shinkin Bank’s restaurant feature',
+  'gallery.title': 'Dishes from Temari.',
+  'gallery.intro': 'Real food photos from our official Instagram.<br>These are past dishes. Please check with the restaurant for this week’s menu.',
+  'gallery.post': 'View post <span aria-hidden="true">↗</span>',
+  'gallery.image.blue': 'Food and vegetables served on a blue plate',
+  'gallery.image.fried': 'A fried dish served with sauce in a ceramic bowl',
+  'gallery.image.yellow': 'A dish with yellow sauce served on a blue plate',
+  'gallery.image.round': 'A plated dish with vegetables on a blue plate',
+  'gallery.image.bowl': 'A dish topped with scallions in a ceramic bowl',
+  'gallery.image.crumbed': 'A plate of fried food with vegetables',
   'contact.map': 'Map &amp; directions <span aria-hidden="true">↗</span>',
   'contact.call': 'Call us <span aria-hidden="true">↗</span>',
   'dialog.instagram': 'Latest updates on Instagram <span class="round-arrow" aria-hidden="true">↗</span>',
@@ -64,9 +75,13 @@ const english = {
   'aria.top': 'Back to top',
   'aria.close': 'Close details',
   'aria.instagram': 'Find the latest updates on Instagram',
-  'image.hero': 'Illustrative photo of cold soba noodles and vegetable tempura on a wooden table',
-  'image.soba': 'Illustrative photo of cold soba noodles with tempura',
-  'image.seasonal': 'Illustrative photo of a seasonal lunch with vegetables and side dishes'
+  'aria.storefrontSource': 'View the source of Temari’s entrance photograph',
+  'aria.parkingSource': 'View the official parking photo post',
+  'image.hero': 'A meal at Temari with rice, soup and side dishes on a wooden table',
+  'image.soba': 'AI-generated placeholder: cold soba noodles with tempura',
+  'image.seasonal': 'A plated dish with vegetables on a ceramic plate',
+  'image.storefront': 'Temari’s noren curtain and wooden entrance',
+  'image.parking': 'Temari’s parking area with P markers showing the parking spaces'
 };
 
 const localizedElements = [...document.querySelectorAll('[data-i18n], [data-i18n-aria], [data-i18n-alt], [data-i18n-title]')].map((element) => ({
