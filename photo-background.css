@@ -67,7 +67,7 @@ html[lang="en"] .photo-variant h1 { font-size: clamp(44px, 5vw, 72px); line-heig
 .photo-variant .menu-section { background: #242b22; color: #fffaf0; }
 .photo-variant .menu-section .red-stop { color: #eeaa89; }
 .photo-variant .menu-grid { gap: 28px; }
-.photo-variant .menu-card { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: 640px; overflow: hidden; }
+.photo-variant .menu-card { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: 640px; overflow: hidden; border-radius: var(--photo-radius); }
 .photo-variant .menu-card:focus-within { outline: 2px solid #fffaf0; outline-offset: -6px; }
 .photo-variant .menu-image-button { position: absolute; inset: 0; z-index: -1; height: 100%; }
 .photo-variant .menu-image-button img { width: 100%; height: 100%; aspect-ratio: auto; object-position: center; }
